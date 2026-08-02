@@ -1,0 +1,290 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Case Study: Würth México x Mercado Libre</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-dim": "#d9dadc", "on-primary-fixed-variant": "#474649", "on-tertiary-container": "#484000", "on-secondary": "#ffffff", "on-primary-fixed": "#1b1b1d", "secondary-container": "#708cfd", outline: "#77767b", background: "#f9f9fb", "on-tertiary": "#ffffff", "on-primary-container": "#868587", "surface-container-highest": "#e2e2e4", "secondary-fixed": "#dde1ff", "on-secondary-container": "#00217a", tertiary: "#6a5f00", primary: "#030304", "surface-container-lowest": "#ffffff", "surface-container-high": "#e8e8ea", "surface-variant": "#e2e2e4", "secondary-fixed-dim": "#b8c4ff", "on-secondary-fixed-variant": "#173bab", "error-container": "#ffdad6", "tertiary-fixed-dim": "#dec800", "surface-container-low": "#f3f3f5", "surface-tint": "#5f5e60", error: "#ba1a1a", "inverse-on-surface": "#f0f0f2", surface: "#f9f9fb", "on-tertiary-fixed": "#201c00", "on-tertiary-fixed-variant": "#504700", "outline-variant": "#c7c6ca", "inverse-surface": "#2f3132", "tertiary-fixed": "#fde400", "on-secondary-fixed": "#001453", "primary-container": "#1d1d1f", "surface-bright": "#f9f9fb", "tertiary-container": "#bfac00", "on-error": "#ffffff", "primary-fixed": "#e4e2e4", "surface-container": "#edeef0", "on-surface": "#1a1c1d", secondary: "#3755c3", "primary-fixed-dim": "#c8c6c8", "inverse-primary": "#c8c6c8", "on-background": "#1a1c1d", "on-primary": "#ffffff", "on-surface-variant": "#46464a", "on-error-container": "#93000a"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"margin-mobile": "20px", gutter: "32px", "container-max": "1280px", unit: "8px", "section-padding": "120px"}, fontFamily: {"display-lg": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "display-lg-mobile": ["Inter"], "label-sm": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"display-lg": ["72px", {lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "700"}], "headline-lg": ["32px", {lineHeight: "1.3", letterSpacing: "-0.01em", fontWeight: "600"}], "body-lg": ["20px", {lineHeight: "1.6", letterSpacing: "0", fontWeight: "400"}], "headline-xl": ["48px", {lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600"}], "body-md": ["16px", {lineHeight: "1.6", letterSpacing: "0", fontWeight: "400"}], "display-lg-mobile": ["40px", {lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700"}], "label-sm": ["12px", {lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600"}]}}}};</script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9fb;
+            color: #1a1c1d;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .soft-shadow {
+            box-shadow: 0 32px 48px -12px rgba(29, 29, 31, 0.04);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 48px 64px -16px rgba(29, 29, 31, 0.08);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .masonry-item:hover img {
+            transform: scale(1.02);
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<span class="font-headline-lg text-headline-lg text-primary">Würth México x Mercado Libre</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="#">PROYECTOS</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html#skills">SKILLS</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="index.html#about">PERFIL</a>
+
+</div>
+<a href="index.html#contact">
+    <button class="bg-primary text-on-primary px-8 py-3 rounded-[12px] font-body-md font-semibold hover:opacity-80 transition-all duration-200">
+                CONTACT</button>
+</a>
+
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-40 pb-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="max-w-4xl fade-in">
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4">MARKETPLACE</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-none">
+                Würth México x Mercado Libre
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Este proyecto integró estrategia de marketing, producción audiovisual y contenido digital para comunicar el lanzamiento de Würth México en Mercado Libre.
+            </p>
+</div>
+<div class="mt-16 rounded-2xl overflow-hidden soft-shadow fade-in" style="animation-delay: 0.2s;">
+<img class="w-full h-[600px] object-cover hover:scale-[1.01] transition-transform duration-1000" data-alt="A high-fidelity minimalist digital marketing mockup featuring a sleek professional workspace. On a high-resolution display, we see the Würth México official store on Mercado Libre, showcasing professional tools like drills and toolkits. The scene is lit with clean, architectural studio lighting with a neutral gray and deep black color palette. The overall mood is sophisticated, industrial, and high-end, matching the premium editorial design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5b4o5ZElQTsWArsPfvAow3UswuHaL6Ly9fhvcqT6wVB1DyqOOkXqOl4IgV-zSbz-ACa1YahYtk64hYkIL6EmfHwpOEJA_ns1zmtNr0HsmudPVIu-M49ZV1RCgK8gh7NzYmv-YoAsXBmwQQ8DDh8LBh2jezRh5bqRjFEV0VeB5Ih8Byo9DpsDMGc44S6HCe_ACMkFVkgQPiERWF1tJCt29FPnrXwK3Jyq4RwBUFKgYRngFP7krnnYo">
+</div>
+</header>
+<!-- Project Overview -->
+<section class="py-section-padding bg-surface-container-lowest border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4 space-y-12">
+<div>
+<h3 class="font-label-sm text-label-sm text-outline uppercase mb-4">Client</h3>
+<p class="font-headline-lg text-headline-lg">Würth México</p>
+</div>
+<div>
+
+
+</div>
+<div>
+
+
+</div>
+</div>
+<div class="md:col-span-8">
+<h3 class="font-label-sm text-label-sm text-outline uppercase mb-4">My role</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Marketing digital</span>
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Estrategia creativa</span>
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Guionización</span>
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Producción audiovisual</span>
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Diseño gráfico</span>
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Meta ADS</span>
+<span class="px-6 py-2 bg-surface-container rounded-full font-body-md text-body-md">Edición de vídeo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section -->
+<section class="py-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="mb-16">
+<h2 class="font-headline-xl text-headline-xl mb-6">Impacto del proyecto</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl"><font dir="auto">La campaña se desarrolló en tres fases para acompañar el recorrido del usuario. El </font><strong data-start="292" data-end="310"><font dir="auto">prelanzamiento</font></strong><font dir="auto"> tuvo como objetivo generar reconocimiento y expectativa mediante contenido audiovisual y piezas gráficas.&nbsp;</font><div><font dir="auto"><br></font></div><div><font dir="auto">Posteriormente, la fase de </font><strong data-start="444" data-end="459"><font dir="auto">lanzamiento</font></strong><font dir="auto"> se enfocó en dirigir el tráfico hacia la nueva tienda oficial de Würth México en Mercado Libre mediante campañas de Meta Ads orientadas a clics y conversiones.&nbsp;</font></div><div><br><div><font dir="auto">Actualmente, la fase de </font><strong data-start="641" data-end="660"><font dir="auto">postlanzamiento</font></strong><font dir="auto"> continúa activa, por lo que sus resultados aún se encuentran en proceso de evaluación.</font></div></div></p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- KPI Card 1 -->
+<div class="bg-surface-container-low p-8 rounded-xl border-t-4 border-secondary card-hover transition-all">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-4">Reach (Pre-launch)</p>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary">518,300</h4>
+<div class="mt-4 flex items-center text-secondary">
+<span class="material-symbols-outlined mr-2">trending_up</span>
+<span class="font-label-sm text-label-sm">Brand Awareness Focus</span>
+</div>
+</div>
+<!-- KPI Card 2 -->
+<div class="bg-surface-container-low p-8 rounded-xl border-t-4 border-tertiary card-hover transition-all">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-4">Impressions (Pre-launch)</p>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary">659,320</h4>
+<div class="mt-4 flex items-center text-tertiary">
+<span class="material-symbols-outlined mr-2">visibility</span>
+<span class="font-label-sm text-label-sm">High Visibility Stage</span>
+</div>
+</div>
+<!-- KPI Card 3 -->
+<div class="bg-surface-container-low p-8 rounded-xl border-t-4 border-primary card-hover transition-all">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-4">Reach (Launch)</p>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary">1.01M</h4>
+<div class="mt-4 flex items-center text-primary">
+<span class="material-symbols-outlined mr-2">bolt</span>
+<span class="font-label-sm text-label-sm">Campaign Peak</span>
+</div>
+</div>
+<!-- KPI Card 4 -->
+<div class="bg-surface-container-low p-8 rounded-xl border-t-4 border-outline card-hover transition-all">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-4">Clicks (Launch)</p>
+<h4 class="font-display-lg-mobile text-display-lg-mobile text-primary">82,636</h4>
+<div class="mt-4 flex items-center text-on-surface-variant">
+<span class="material-symbols-outlined mr-2">ads_click</span>
+<span class="font-label-sm text-label-sm">Conversion Traffic</span>
+</div>
+</div>
+</div>
+<div class="mt-12 p-8 bg-primary text-on-primary rounded-xl flex items-center justify-between">
+<span class="font-headline-lg text-headline-lg">ROAS 3.0</span>
+<p class="font-body-md text-body-md opacity-80 max-w-md text-right">
+                Las campañas creativas con mejor rendimiento lograron un retorno de inversión publicitaria cercano a 3.0 durante la fase de lanzamiento.
+            </p>
+</div>
+</section>
+<!-- Creative Gallery -->
+<section class="py-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="font-headline-xl text-headline-xl">Creative Gallery</h2>
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Masonry Layout</p>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-gutter space-y-gutter">
+<!-- Gallery Item 1 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-auto" data-alt="A clean editorial masonry layout mockup showing a mobile phone screen with the Mercado Libre app open. It displays a specialized Würth México banner with high-contrast typography and red branding accents. The background is a crisp minimalist white studio setting with soft directional shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWEo4MTDFh9-0gwQd-uNSkvS83mSvqsswFRTa5YdfqJek6R7PftxbMcZtmjIQ6v0tzNeHLG-eW43f0So6UfJSPSc8sgG9UxoU0V1dNiO80Oh9zb3_o2MDR8xC0PkIHYaiIYv4O93uRGi_t0joI9MrzHSm8A6irY27ypGOQt8HDOoT4mP4saP1KfdroKXpVi9EIaL7pPKFPEI00aPskJxhPN9Q7lowjcjlmtEeChtR_59kGwKoJ-hGQ">
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-all duration-500 flex items-end p-8">
+<p class="text-white font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">Maquetas de campaña</p>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-auto" data-alt="A grid of professional social media posts for Instagram. Each post features a different industrial tool from Würth México with bold typography, minimalist product photography, and the Mercado Libre logo. The aesthetic is uniform, using a strictly controlled color palette of red, white, and dark charcoal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEH1LrV9dNhxU2isZui9Cmgb-Sr5qwR18QY-bXYyAUG_zJIuUpOwwHnlh45ZqFJbc3FC-LVXAxYTSRzBUjvClPc95JkA0w3sod4Yo6gi1pjbbRrFOny3tLGCo25-1tuXr5Fi3YzPlZTkViXXBNeCVjNt76JdLqY4oMInrgnJWxfbcFh3Ws_IJ82ThOL5aVGB98qTKc8k5bQpA_l_l-cXDLGAjU62bF0CgnsMLmFEd-jADqNv9xjcm0">
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-all duration-500 flex items-end p-8">
+<p class="text-white font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">Publicaciones en redes sociales</p>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-auto" data-alt="An abstract motion graphics still frame showing dynamic particles in Würth red and Mercado Libre yellow swirling around a 3D rendered power tool. The style is futuristic and polished, with high-end digital rendering and motion blur effects that suggest professional speed and efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIO2EX2zTBwST4JrFXXkJnKZkdwJAnMdJpmV4h5jJIEaub9RjIUpteMw-FJrm_8IxgVs5BZ4F65PuoJnIIVqwv94gCjsjheHubE9wW0_A757aRLUat_td3MgiTt9-V4uUpkZ9boUbnJAOpKG8aPwdy5xc6uyVLs7pqCBteCmclO_ENIiV8blyAM3deE_WQLQv30LTkPEbYB_LnLXSub_0a-TT2YdFTweGEjWutLxwOlGj_oC5DRo5P">
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-all duration-500 flex items-end p-8">
+<p class="text-white font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">Movimiento</p>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-surface-container">
+<img class="w-full h-auto" data-alt="A high-end cinematic still from a product video. It shows a close-up of a hand using a Würth screwdriver on a piece of modern machinery. The lighting is low-key with sharp highlights on the metallic surfaces, creating a sense of expert craftsmanship and industrial reliability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzlkmAEW9PTPFzhq8lMbTw-Qw-VjdEr8S7KjONSGeotxsrky3dYw7ik3c5moW_BSt5K9xE_B1iBYVh6gb1z00HJDHAE4mPaWfxx2ZXzBETwFrw8oSYjJqmwTbhh4ZAcnjR_WPk-umDzRJ4-2GxPGrSPjpRPQNui7N3AO9ngUXl6FJnIhiFl2ikcIcYtA_rtZsB_M7P5oQ9WHbwj6k7AFbDhNXRjyiKzE6mPEKKQSk7BHttqHuFE6tc">
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-all duration-500 flex items-end p-8">
+<p class="text-white font-body-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">Producción Audiovisual</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Showcase -->
+<section class="py-section-padding bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-headline-xl text-headline-xl mb-16 text-center">Video Showcase</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Video Card 1 -->
+<div class="group relative aspect-video rounded-3xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic video thumbnail showing a dramatic teaser for the Würth México launch. The lighting is dark with a singular red spotlight on the company logo. The composition is centered and symmetrical, creating a sense of anticipation and prestige." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7yCHcJyiQrfBZpCx-Az4mCK1tFqWJ-mMclhrH1HCdr-aXOfGn7CDdsUm_F2k4kdfCnbrbTrDEUvkiloB_aUpBX_DdzNlgN_OO3d2S-qoewNmUc9tyS0pGfqJ5j_MKMqKseR80ZdLPkX4z-sLxaKKX4bJmsLL842hjpBZH_CEFyiKvbcer4-6DxIbwbFRg2NR1Am5p0JB0BZjcjoxVRo0NVBmkj2a7KonurcfcuBlqDUa1tt9GNR8k">
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+<div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+<h4 class="font-headline-lg text-headline-lg">Vídeo previo al lanzamiento</h4>
+</div>
+</div>
+<!-- Video Card 2 -->
+<div class="group relative aspect-video rounded-3xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-energy video thumbnail featuring split-screen action of multiple tools being used. The colors are vibrant and saturated, with yellow and red graphical overlays indicating Mercado Libre's fast shipping features. It looks professional and conversion-oriented." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk44E2craiERQ3YChAk35rJ6AZeV0vSeP9rCPRRP2TThg0Iv0-Y5vuvKPlqY8Oeudvr88BICV8pCvjtODYiibSwnGb4ez0PBTXoy7gjyxOgFfudqbfy7BdnkGEAp5W9D6Tdtbz4lOiM9Fr_k-XWqQdM4eLBkrzH6N8iVKoXpVRP7sa1Ofr1wzJgiW9R5pZwahu3NmxOXUG5b23d4SXFaXhg4vM4_E5_i6gvBL2BWvo7ptTYVCfEue7">
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+<div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+<h4 class="font-headline-lg text-headline-lg">Vídeo de lanzamiento</h4>
+</div>
+</div>
+<!-- Video Card 3 -->
+<div class="group relative aspect-video rounded-3xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A clean technical animation thumbnail showing an exploded view of a Würth industrial tool. Parts are floating in a white 3D space with subtle light-gray shadows. Technical annotations in fine typography highlight key features, emphasizing quality and precision engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuynxdOKLXXbkofJoUQKlNEZoknMFtUW9zW2h2pGYbcIRKswJho8XvwqgvrY6p7qMEtMaIgTf8wvb5E9tElVoID98qdtj_o9VWB0hXisEHs33aobZqvn7LVMMDbCmFz_lB_wu9G1ABU1YMVzALw0Y7dGjtFpiJ6MtXChwVIJroEpnDAUD_EKDQ3ZedevgM9snuc9LqB0Ty4FR5ij9AY0W8EAf6FyzQTPvY7uyO6QjGOqzXIQRHZr48">
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+<div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+<h4 class="font-headline-lg text-headline-lg">Gráficos en movimiento</h4>
+</div>
+</div>
+<!-- Video Card 4 -->
+<div class="group relative aspect-video rounded-3xl overflow-hidden cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A macro product photography shot from a video, showing the textured grip of a professional tool. Dust particles catch the light in the background, creating a moody, industrial-chic aesthetic. The shot is high-contrast and very detailed, focusing on material quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv0ptijFnrT6tjQ-b3yTSmFw7w099UjFkykPThq8EN3w_VKm49n6RUVoOgjiyv6ouMXHi0YUTeooo8hMyCZ_l8gF3LFiFvmfMU2NzZhoOD7zqZiSDhbvqKVCepF970e2QC9SuAqxxSaS4MJSk8LWCz85La4yjUbyY7rppOfK-w0g_KY6-37YbJsIRvmFJc0Ulxqx3xEY1wwmZ9DAspNqeiQhR26t9jvTPqeft_BdcF4F2SbE-j66n3">
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+<div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+<h4 class="font-headline-lg text-headline-lg">Vídeo del producto</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Takeaways -->
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center py-16 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="font-headline-md text-headline-md text-primary">Würth México x Mercado Libre</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2">© 2024 Editorial Portfolio. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms</a>
+<a class="font-label-sm text-label-sm text-primary underline" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-background/95', 'soft-shadow');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.remove('py-2', 'bg-background/95', 'soft-shadow');
+                nav.classList.add('h-20');
+            }
+        });
+    </script>
+
+
+</body></html>

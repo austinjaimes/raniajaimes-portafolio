@@ -1,0 +1,493 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Marketing Specialist | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-bright": "#fdf8f8",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "on-primary-container": "#858383",
+                    "on-background": "#1c1b1b",
+                    "on-secondary-fixed": "#002b28",
+                    "tertiary-container": "#1d1b1a",
+                    "background": "#fdf8f8",
+                    "inverse-surface": "#313030",
+                    "surface-container-low": "#f7f3f2",
+                    "primary-fixed": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#5f5e5e",
+                    "surface": "#fdf8f8",
+                    "outline": "#747878",
+                    "inverse-on-surface": "#f4f0ef",
+                    "inverse-primary": "#c8c6c5",
+                    "outline-variant": "#c4c7c7",
+                    "surface-dim": "#ddd9d8",
+                    "secondary": "#0F766E",
+                    "secondary-fixed-dim": "#86d1ca",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#0F766E",
+                    "secondary-fixed": "#b2f5f0",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f1edec",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#ebe7e6",
+                    "on-tertiary-fixed-variant": "#484645",
+                    "on-tertiary-fixed": "#1d1b1a",
+                    "tertiary-fixed-dim": "#cac6c3",
+                    "primary-container": "#1c1b1b",
+                    "on-primary-fixed-variant": "#474646",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-fixed-variant": "#0a5651",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "tertiary": "#000000",
+                    "tertiary-fixed": "#e6e1df",
+                    "surface-variant": "#e5e2e1",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#444748",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#ffffff",
+                    "on-tertiary-container": "#868381"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "section-padding-desktop": "160px",
+                    "gutter": "32px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-padding-mobile": "80px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "26px", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["20px", {"lineHeight": "32px", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-lg": ["84px", {"lineHeight": "92px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hover-zoom:hover img {
+            transform: scale(1.05);
+        }
+        .timeline-node::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background: #000;
+            border-radius: 50%;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary/30 selection:text-primary">
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl transition-all duration-300" style="transform: translateY(0px);">
+<div class="flex justify-between items-center w-full px-8 md:px-section-padding-desktop py-6 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">menu</span>
+<span style="font-size: 30px;" class="text-label-caps font-label-caps tracking-widest text-primary">Rania Jaimes</span>
+</div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#proyectos">PROYECTOS</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#skills">SKILLS</a>
+<a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="#about">PERFIL</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg text-label-caps font-label-caps hover:scale-105 transition-transform duration-300" href="#contact">CONTACT</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-24 overflow-hidden px-8 md:px-section-padding-desktop">
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-10 lg:col-span-8">
+<p class="text-label-caps font-label-caps text-secondary mb-6 tracking-[0.2em] reveal active">Diseño | Marketing Digital | Producción Audiovisual | Redes Sociales</p>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 reveal active">
+                    Portafolio de Marketing Digital y Contenido Creativo
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl reveal active">
+                    No solo diseño de piezas visuales. Desarrollo contenidos, campañas y experiencias digitales que combinan creatividad, estrategia y comunicación para generar impacto.
+                </p>
+<div class="flex gap-4 reveal active">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-lg text-label-caps font-label-caps hover:scale-105 transition-transform duration-300" href="#proyectos">VER PROYECTOS</a>
+<a class="border border-outline-variant px-10 py-5 rounded-lg text-label-caps font-label-caps hover:bg-surface-container-low transition-colors" href="#contact">CONTACTO</a>
+</div>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-8 md:px-section-padding-desktop bg-surface-container-lowest" id="about">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 reveal active">
+<div class="relative group">
+<div class="absolute -inset-4 border border-outline-variant rounded-xl group-hover:-inset-2 transition-all duration-500"></div>
+<img class="w-full aspect-[4/5] object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A professional, high-fashion portrait of a digital designer in a light-filled, minimalist studio. The subject has a confident, visionary expression. The lighting is soft and editorial, emphasizing clean lines and sophisticated textures. The background is a warm, off-white gallery wall, creating a premium light-mode aesthetic with a palette of blacks, whites, and subtle grays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3i-0klvhNjzWjzqqkZcynxcRStaWObqaNNMUT3mPrJ4xJsPowCQWF8pFRZNcDQDEAICQ-ZRtnvv7_kvjxoA3LR60kn8zm80Jw2QnjDVrDFH8KIVUVrZCSIODJ5yckgCWJ26iYzZNw2RGJ_1zkPWlBJUQWcez7HUpctMJdURsGDLRkevfuB4sBjnkURpBRcs_WejAAQzM3FKvWmFQLQKnfG2CgkVOuGxcRIZdtmUVwCT4wRHGQe17XbWsmxxHn_wayTt1YYA2jnZC4Xg">
+</div>
+</div>
+<div class="md:col-span-7 reveal active">
+<h2 class="text-label-caps font-label-caps text-on-surface-variant mb-4 uppercase tracking-widest">About Me</h2>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary mb-8 leading-tight">Diseñadora con experiencia en Marketing Digital</h3>
+<div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg">
+<p class=""></p><p class="PDq2pG_selectionAnchorContainer" data-end="1754" data-start="1462"><font dir="auto">Soy Licenciada en Diseño Digital con experiencia en marketing digital, producción audiovisual y creación de contenidos. Me apasiona desarrollar proyectos que combinan estrategia, creatividad y comunicación para ayudar a las marcas a conectarse con sus audiencias y alcanzar objetivos de negocio.</font><span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
+<p class="" data-end="2063" data-start="1759"><font dir="auto">Durante mi trayectoria he participado en campañas de lanzamiento, estrategias visuales para e-commerce, producción de contenido audiovisual, branding y gestión de redes sociales.</font></p><p class=""></p>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-8 border-t border-outline-variant pt-8">
+<div style="width: 100%; display: flex; flex-direction: row; gap: 20px; justify-content: flex-start;">
+    <button style="height: 35px; width: auto; padding: 5px; background-color: pink; border-radius: 10px;">Español: nativo</button>
+    <button style="height: 35px; width: auto; padding: 5px; background-color: pink; border-radius: 10px;">B2 Inglés</button>
+</div>
+<div>
+<span class="block text-primary font-bold text-headline-md font-headline-md"><br></span>
+<span class="text-label-caps font-label-caps text-on-surface-variant"></span>
+</div>
+<div>
+<span class="block text-primary font-bold text-headline-md font-headline-md"><br></span>
+<span class="text-label-caps font-label-caps text-on-surface-variant"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-8 md:px-section-padding-desktop" id="proyectos">
+<div class="max-w-container-max mx-auto">
+<div class="mb-24 reveal active">
+<h2 class="text-label-caps font-label-caps text-secondary mb-4 tracking-[0.2em]">CASOS DE ESTUDIO</h2>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Proyectos Destacados</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-24 gap-x-gutter">
+<!-- Project 1 -->
+<div class="md:col-span-12 group reveal active">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-xl bg-surface-container-highest">
+<div class="hover-zoom cursor-pointer">
+<img class="w-full aspect-video object-cover transition-transform duration-700" data-alt="A clean, minimalist high-tech warehouse scene showcasing the Würth México Marketplace launch on Mercado Libre. The image features high-end automotive tools and industrial products presented on digital tablets and screens. The lighting is bright and modern, with a sophisticated palette of red, black, and white. The composition is balanced and editorial, emphasizing e-commerce efficiency and premium brand identity." src="/assets/imagenprincipal-meli.png">
+</div>
+</div>
+<div class="lg:col-span-5">
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-2 block">E-COMMERCE &amp; MARKETPLACE</span>
+<h4 class="text-headline-lg-mobile md:text-headline-md font-headline-md text-primary mb-4">Lanzamiento de Würth México en Mercado Libre</h4>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">Desarrollé la estrategia creativa y la producción de contenido para la campaña. Conceptualización, preproducción, producción audiovisual, edición de video, diseño de piezas gráficas y adaptación de contenido para publicaciones orgánicas y campañas de Meta Ads.</p>
+<a href="lanzamientomercadolibre.html">
+    <button class="flex items-center gap-2 group/btn font-label-caps text-label-caps text-primary hover:text-secondary transition-colors">
+                                VER DETALLES <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+</button>
+</a>
+
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="md:col-span-6 group reveal active">
+<div class="overflow-hidden rounded-xl bg-surface-container-highest mb-8">
+<div class="hover-zoom cursor-pointer">
+<img class="w-full aspect-[4/3] object-cover transition-transform duration-700" data-alt="A cinematic, low-angle shot of a sleek Hyundai car parked in the vibrant, modern architectural setting of Río Mayo. The lighting uses warm afternoon sun and sharp geometric shadows to highlight the car's curves. The aesthetic is clean and professional, using a sophisticated color palette of deep blues and metallic silvers against a minimalist urban background. Professional audiovisual production style." src="/assets/imagen-principal-hyundai.jpg">
+</div>
+</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-2 block">PRODUCCIÓN AUDIOVISUAL</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">Hyundai Río Mayo</h4>
+<p class="text-on-surface-variant font-body-md text-body-md">Desarrollé una serie de videos técnicos y comerciales para comunicar la aplicación de productos Würth en vehículos Hyundai. Participé en todo el proceso creativo, desde la elaboración de guiones y propuesta visual hasta la grabación, edición y postproducción, transformando información técnica en contenido atractivo.</p>
+</div>
+<!-- Project 3 -->
+<div class="md:col-span-6 group reveal active">
+<div class="overflow-hidden rounded-xl bg-surface-container-highest mb-8">
+<div class="hover-zoom cursor-pointer">
+<img class="w-full aspect-[4/3] object-cover transition-transform duration-700" data-alt="A minimalist brand identity design for the 35th anniversary of Würth México. The layout features elegant typography, a bold celebratory '35' logo, and a clean grid structure. The color scheme is strictly black, white, and a signature red accent. The design is displayed on high-end corporate stationery and digital screens in a bright, airy gallery environment, conveying a sense of legacy and future-ready strategy." src="/assets/imagen-principal-35años-02.png">
+</div>
+</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-2 block">BRANDING - CREACIÓN DE LOGO</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">35.º Aniversario Würth México</h4>
+<p class="text-on-surface-variant font-body-md text-body-md"><font dir="auto">Creé el logotipo conmemorativo del </font><strong data-end="979" data-start="943"><font dir="auto">35.º aniversario de Würth México</font></strong><font dir="auto">, el cual fue utilizado por la empresa en diferentes materiales de comunicación interna y externa. También realicé su animación en </font><strong data-end="1133" data-start="1110"><font dir="auto">Adobe After Effects</font></strong><font dir="auto"> para piezas audiovisuales.</font></p>
+</div>
+<!-- Project 4 -->
+<div class="md:col-span-12 group reveal active">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-2 block">E-COMMERCE &amp; ESTRATEGIA VISUAL</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-4">Contenido para E-commerce</h4>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">Diseñé y produje contenido visual para la tienda en línea de Würth México, desarrollé videos promocionales, motion graphics, banners y piezas gráficas orientadas a comunicar promociones, impulsar el registro de usuarios y fortalecer las campañas comerciales de e-commerce.</p>
+<a href="contenidodigitalecommerce.html">
+<button class="flex items-center gap-2 group/btn font-label-caps text-label-caps text-primary hover:text-secondary transition-colors">
+                                VER DETALLES <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+</button>
+</a>
+
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 overflow-hidden rounded-xl bg-surface-container-highest">
+<div class="hover-zoom cursor-pointer">
+<img class="w-full aspect-video object-cover transition-transform duration-700" data-alt="A dynamic bento-grid style collage of various social media assets, including motion graphics snippets, vibrant graphic designs, and video stills. The layout is asymmetric and modern, showcasing a mix of high-energy content for platforms like Instagram and TikTok. The color palette is sophisticated with black, white, and electric blue accents, all presented on a minimalist light-mode background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQbXISwEzwJXnt2CA4a4Ej-QKJ95Tl1DzxP8Lkgzx4yGoPa06crDeX8WxUVQT0pW5foVOIekywgqP9BHUdTaFMbljtQ2BXj5HIoeo6O9e31TcDm7w63cnUAC5rSVdwzG72PIKEusm5RmYnHuWB63HsskOWW9B7A2FsJkH68BMribNPNCwIqzLP95Gl0JyAuB_1rSOAKHAx9rzGFr3RwYEBb_VX8Krnh34DIF1H3zIzo5vTcOe77qCn">
+</div>
+</div>
+</div>
+</div><div class="md:col-span-12 group reveal active">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-xl bg-surface-container-highest">
+<div class="hover-zoom cursor-pointer">
+<img alt="Modern e-commerce marketing campaign visual, clean minimalist product photography, professional digital advertising style, high-end branding." class="w-full aspect-video object-cover transition-transform duration-700" src="/assets/rrss-imagenprincipal.png">
+</div>
+</div>
+<div class="lg:col-span-5">
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-2 block">SOCIAL MEDIA | COMMUNITY MANAGER</span>
+<h4 class="text-headline-lg-mobile md:text-headline-md font-headline-md text-primary mb-4"></h4><h4 class="text-headline-md font-headline-md text-primary mb-4" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(0, 0, 0); outline: none !important; box-shadow: none !important;">Estrategia de Contenido para Redes Sociales</h4>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6">Desarrollé contenido para las redes sociales de Würth México mediante la planeación, diseño y producción de publicaciones, reels y contenido alineado con tendencias digitales. Mi trabajo estuvo enfocado en fortalecer la presencia de la marca, incrementar el engagement y generar una comunicación cercana con la audiencia.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section (Bento Grid) -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-8 md:px-section-padding-desktop bg-surface-container-low" id="skills">
+<div class="max-w-container-max mx-auto">
+<div class="mb-16 text-center reveal active">
+<h2 class="text-label-caps font-label-caps text-on-surface-variant mb-4 uppercase tracking-[0.2em]">Competencias Técnicas</h2>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Experiencia en</h3>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal active">
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">campaign</span>
+<h5 class="font-headline-md text-headline-md">Digital Marketing</h5>
+</div>
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">ads_click</span>
+<h5 class="font-headline-md text-headline-md">Campañas Publicitarias</h5>
+</div>
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">video_settings</span>
+<h5 class="font-headline-md text-headline-md">Producción Audiovisual</h5>
+</div>
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">brush</span>
+<h5 class="font-headline-md text-headline-md">Diseño Digital</h5>
+</div>
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">waves</span>
+<h5 class="font-headline-md text-headline-md">Motion Graphics</h5>
+</div>
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">token</span>
+<h5 class="font-headline-md text-headline-md">E-commerce</h5>
+</div>
+
+<div class="bg-surface p-8 rounded-xl border border-outline-variant hover:shadow-xl hover:border-secondary transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl">psychology</span>
+<h5 class="font-headline-md text-headline-md">Complementar con IAs</h5>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-8 md:px-section-padding-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 reveal active">
+<h2 class="text-label-caps font-label-caps text-secondary mb-4 tracking-[0.2em]">EXPERIENCIA</h2>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Mi Trayectoria Profesional</h3>
+</div>
+<div class="md:col-span-8 reveal active">
+<div class="ml-8 border-l border-outline-variant space-y-16">
+<div class="relative pl-12 timeline-node">
+<style>.timeline-node::before { background: #0F766E !important; }</style>
+<span class="text-label-caps font-label-caps text-on-surface-variant block mb-2 uppercase">nov 2024 - presente</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-2">Marketing Digital&nbsp;</h4>
+<p class="text-secondary font-headline-md mb-4">Würth México</p>
+<p class="text-on-surface-variant text-body-md font-body-md max-w-2xl">
+                            • Produje contenido gráfico y audiovisual para campañas digitales, e-commerce y clientes estratégicos como Hyundai Río Mayo, participando en todo el proceso creativo, desde la conceptualización hasta la postproducción.&nbsp;</p><div class="">• Diseñé y ejecuté campañas de comunicación para el lanzamiento de Würth en Mercado Libre, así como para temporadas comerciales como Hot Sale, Black Friday y Cyber Monday, desarrollando materiales para distintos canales digitales.&nbsp;</div><div class="">• Gestioné campañas publicitarias en Meta Ads y colaboré en campañas Search y Performance Max de Google Ads, apoyando la promoción de productos, ofertas y objetivos comerciales.&nbsp;</div><div class="">• Planeé y ejecuté activaciones de contenido en campo, además de realizar la cobertura audiovisual de eventos corporativos para fortalecer la presencia de la marca en redes sociales, incluyendo materiales compartidos con Würth Alemania.&nbsp;</div><div class="">• Diseñé materiales gráficos y audiovisuales para campañas comerciales, promociones y comunicación interna, contribuyendo a la estrategia digital y al cumplimiento de los objetivos del área.
+                        </div><p class=""></p>
+</div>
+<div class="relative pl-12 timeline-node">
+<span class="text-label-caps font-label-caps text-on-surface-variant block mb-2 uppercase">abril - nov 2024</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-2">Prácticante Diseño Gráfico</h4>
+<p class="text-secondary font-headline-md mb-4">Würth México</p>
+<p class="text-on-surface-variant text-body-md font-body-md max-w-2xl">
+                            • Diseñé la identidad visual del 35.º aniversario de Würth México , implementándola en diversos materiales corporativos distribuidos a nivel nacional.&nbsp;</p><div class="">• Desarrollé un folleto interactivo para la división de Metal mediante iPaper y diseñé materiales gráficos para campañas internas y promocionales.&nbsp;</div><div class="">• Realicé fotografía y edición de productos para la tienda en línea y colaboré con el equipo de Marketing en la ejecución de proyectos mediante Asana.
+                        </div><p class=""></p>
+</div>
+<div class="relative pl-12 timeline-node">
+<span class="text-label-caps font-label-caps text-on-surface-variant block mb-2 uppercase">2022 - presente</span>
+<h4 class="text-headline-md font-headline-md text-primary mb-2">Diseñadora Digital</h4>
+<p class="text-secondary font-headline-md mb-4">Magnific Memories | Emprendimiento</p>
+<p class="text-on-surface-variant text-body-md font-body-md max-w-2xl">
+                            • Diseñé invitaciones digitales personalizadas para eventos sociales, adaptando cada proyecto a la identidad y necesidades del cliente.&nbsp;</p><div class="">• Desarrollé propuestas gráficas y contenidos visuales para fortalecer la imagen del emprendimiento en medios digitales.&nbsp;</div><div class="">• Gestioné la comunicación con clientes, realizando ajustes y seguimiento durante el proceso de diseño.
+                        </div><p class=""></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-8 md:px-section-padding-desktop bg-surface-container-lowest" id="ecosistema">
+<div class="max-w-container-max mx-auto">
+<div class="mb-16 reveal active">
+<h2 class="text-label-caps font-label-caps text-secondary mb-4 tracking-[0.2em] uppercase">softwares</h2>
+<h3 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Herramientas de Trabajo</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal active">
+<!-- Marketing -->
+<div class="space-y-6">
+<h4 class="text-label-caps font-label-caps text-secondary border-b border-outline-variant pb-2">MARKETING</h4>
+<ul class="space-y-3 text-on-surface-variant font-body-md">
+<li class="">Meta Ads</li>
+<li class="">Google ADS (Básico)</li>
+</ul>
+</div>
+<!-- Diseño -->
+<div class="space-y-6">
+<h4 class="text-label-caps font-label-caps text-secondary border-b border-outline-variant pb-2">DISEÑO</h4>
+<ul class="space-y-3 text-on-surface-variant font-body-md">
+<li class="">Adobe Photoshop</li>
+<li class="">Adobe Illustrator</li>
+<li class="">Adobe Indesign</li>
+<li class="">Figma</li>
+<li class="">Canva</li>
+</ul>
+</div>
+<!-- Video -->
+<div class="space-y-6">
+<h4 class="text-label-caps font-label-caps text-secondary border-b border-outline-variant pb-2">VIDEO</h4>
+<ul class="space-y-3 text-on-surface-variant font-body-md">
+<li class="">Adobe After Effects</li>
+<li class="">Adobe Premiere Pro</li>
+<li class="">Capcut</li>
+</ul>
+</div>
+<!-- IA -->
+<div class="space-y-6">
+<h4 class="text-label-caps font-label-caps text-secondary border-b border-outline-variant pb-2">IA</h4>
+<ul class="space-y-3 text-on-surface-variant font-body-md">
+<li class="">ChatGPT</li>
+<li class="">Claude</li>
+<li class="">Gemini</li>
+<li class="">Copilot</li>
+<li class="">Flow</li>
+<li class="">Magnific</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-8 md:px-section-padding-desktop bg-primary text-on-primary" id="contact">
+<div class="max-w-container-max mx-auto text-center reveal active">
+<h2 class="text-label-caps font-label-caps text-secondary-fixed mb-8 tracking-[0.3em]">HABLEMOS</h2>
+<h3 class="text-display-lg-mobile md:text-headline-lg font-headline-lg mb-12 max-w-3xl mx-auto">
+                Creemos juntos experiencias digitales impactantes.
+            </h3>
+<div class="flex flex-col md:flex-row justify-center gap-6 mb-20">
+<a class="bg-secondary text-on-secondary px-12 py-6 rounded-lg text-label-caps font-label-caps hover:scale-105 transition-all flex items-center justify-center gap-3" href="mailto:raniajc@gmail.com">
+<span class="material-symbols-outlined">mail</span> ENVIAR EMAIL: raniajc@gmail.com
+                </a>
+<a class="border border-on-secondary-container/30 px-12 py-6 rounded-lg text-label-caps font-label-caps hover:bg-on-primary/10 transition-all flex items-center justify-center gap-3" href="#">
+<span class="material-symbols-outlined">download</span> DOWNLOAD CV
+                </a>
+</div>
+<div class="flex justify-center gap-8">
+<a class="text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary border-t border-on-primary/10">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 md:px-section-padding-desktop py-12 gap-8 max-w-container-max mx-auto">
+<p class="text-label-caps font-label-caps text-on-primary/40 uppercase">© 2024 DIGITAL CONTENT SPECIALIST. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8">
+<a class="text-label-caps font-label-caps text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">LINKEDIN</a>
+<a class="text-label-caps font-label-caps text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">EMAIL</a>
+<a class="text-label-caps font-label-caps text-on-primary/60 hover:text-secondary-fixed transition-colors" href="#">DOWNLOAD CV</a>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Initial call to reveal items on screen
+        reveal();
+
+        // Navbar interaction
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+            }
+            if (scrollTop > 100) {
+                navbar.classList.add('glass-card');
+            } else {
+                navbar.classList.remove('glass-card');
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+
+</body></html>
